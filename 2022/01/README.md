@@ -1,6 +1,5 @@
 # --- Day 1: Calorie Counting ---
 
----
 
 [Question Link](https://adventofcode.com/2022/day/1) | 
 
