@@ -1,7 +1,7 @@
 # --- Day 1: Calorie Counting ---
 
 
-[Question Link](https://adventofcode.com/2022/day/1) | 
+[Question Link](https://adventofcode.com/2022/day/1) | [Reddit Solution Thread](https://www.reddit.com/r/adventofcode/comments/z9ezjb/2022_day_1_solutions/)
 
 ## Goals:
 
