@@ -3,7 +3,7 @@ from parse import parse
 
 a = open('input').read()
 
-# Every vertical pile of crates is a list with the lowest one as 1st element of respective list
+# Every stack of crates is a list with the lowest one as first element of respective list
 block_list = [[], [], [], [], [], [], [], [], []]
 for line in reversed(a.splitlines()[:8]):
     j = -1
@@ -20,10 +20,9 @@ for line in a.splitlines()[10:]:
 
     on_crane = block_list[move_from][-moves:]
     block_list[move_from] = block_list[move_from][:-moves]
-    block_list[move_to].extend(on_crane)
+    block_list[move_to].extend(reversed(on_crane))  # Remove the reversed method on on_crane to get part 2 solution
 
 end_str = ''
-for vertical_pile in block_list:
-    end_str += str(vertical_pile[-1:][0])
+for stack in block_list:
+    end_str += str(stack[-1:][0])
 print(end_str)
-
